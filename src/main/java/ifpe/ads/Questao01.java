@@ -17,6 +17,8 @@ public class Questao01 {
 
         System.out.print("O número digitado é " + parOuImpar(numero));
 
+        ler.close();
+
     }
     
     public static String parOuImpar (int numero) {
