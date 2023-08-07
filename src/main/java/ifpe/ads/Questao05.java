@@ -36,6 +36,8 @@ public class Questao05 {
             System.out.print("Opção inexistente.");
         }
 
+        ler.close();
+
     }
 
     public static void menu() {
