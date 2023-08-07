@@ -28,10 +28,10 @@ public class Questao05 {
 
         if (opcao == 1) {
             System.out.println("--------------------------------------");
-            areaRetangulo(b, h);
+            System.out.printf("Área do retângulo: %d", areaRetangulo(b, h));
         } else if (opcao == 2) {
             System.out.println("--------------------------------------");
-            perimetroRetangulo(b, h);
+            System.out.printf("Perímetro do retângulo: %d", perimetroRetangulo(b, h));
         } else {
             System.out.print("Opção inexistente.");
         }
@@ -46,15 +46,11 @@ public class Questao05 {
         System.out.println("--------------------------------------");
     }
 
-    public static String areaRetangulo(int b, int h) {
-        int area = b * h;
-
-        return System.out.printf("Área do retângulo: %d", area).toString();
+    public static int areaRetangulo(int b, int h) {
+        return b * h;
     }
 
-    public static String perimetroRetangulo(int b, int h) {
-        int perimetro = (2*b) + (2*h);
-
-        return System.out.printf("Perímetro do retângulo: %d", perimetro).toString();
+    public static int perimetroRetangulo(int b, int h) {
+        return (2*b) + (2*h);
     }
 }
